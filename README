@@ -1,0 +1,27 @@
+A simple ruby library for controlling the windows console.
+
+Place win32console.rb either into your ruby library directory
+or in the same directory as your project
+
+Sample Code:
+require 'Win32Console.rb'
+
+# init the screen
+$console = Win32Console.new;
+
+# clear the screen
+$console.clear
+
+# change the color
+$console.setColor("black","white")
+
+# move to 5,5
+$console.setPosition(5,5)
+
+print "Hello there"
+
+# reset the color to default
+$console.setColor
+
+
+
